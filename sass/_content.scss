@@ -81,18 +81,37 @@
     transition: .3s all ease-in-out;
     transform: translateX(-100vw);
 
+
+
     &.modal-open {
         transform: translateX(0);
         background-color: rgba($yellow, 1);
     }
 
-    button {
+    button.close {
         display: inline-block;
         background-color: transparent;
         box-shadow: none;
         border:  none;
         margin-left: auto;
         margin-right: $spacer-2;
+        color: black;
+        width: auto;
+    }
+
+    button, .button {
+        display: inline-block;
+        text-align: center;
+        border: none;
+        box-shadow: none;
+        background-color: $black;
+        color: white;
+        font-size: var(--bs-body-font-size);
+        text-transform: none;
+        border-radius: 50rem;
+        width: 100%;
+        padding: 0.625rem 2rem;
+        text-decoration: none;
     }
 
 }
