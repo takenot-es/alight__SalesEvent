@@ -1,0 +1,5 @@
+:root {
+    @each $title, $value in $theme-colors {
+        --#{$title}: #{$value};
+    }
+}

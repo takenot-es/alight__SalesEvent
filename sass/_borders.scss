@@ -1,0 +1,46 @@
+@each $title, $value in $spacers {
+    .br {
+
+        &-#{$title} {
+            border-radius: $value;
+        }
+
+        &-tr-#{$title} {
+            border-top-right-radius: $value;
+        }
+
+        &-br-#{$title} {
+            border-bottom-right-radius: $value;
+        }
+
+        &-tl-#{$title} {
+            border-top-left-radius: $value;
+        }
+
+        &-bl-#{$title} {
+            border-bottom-left-radius: $value;
+        }
+
+    }
+}
+
+.br-section {
+    border-radius: $section-border-radius;
+
+    &-tr {
+        border-top-right-radius: $section-border-radius;
+    }
+
+    &-br {
+        border-bottom-right-radius: $section-border-radius;
+    }
+
+    &-tl {
+        border-top-left-radius: $section-border-radius;
+    }
+
+    &-bl {
+        border-bottom-left-radius: $section-border-radius;
+    }
+
+}

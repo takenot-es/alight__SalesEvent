@@ -1,0 +1,76 @@
+// Colors
+$yellow:                    #FFF200;
+$slate:                     #0A2029;
+$black:                     #000000;
+$orange:                    #FF9966;
+$teal:                      #8FE4DE;
+$blue:                      #A1C4FD;
+$purple:                    #C4ABDA;
+
+$theme-colors: (
+    "yellow":                $yellow,
+    "slate":                 $slate,
+    "black":                 $black,
+    "orange":                $orange,
+    "teal":                  $teal,
+    "blue":                  $blue,
+    "purple":                $purple,
+) !default;
+
+
+//Typopgraphy
+$h1-font-size:          clamp(2.5rem,6vw,3.4375rem);
+$h2-font-size:          clamp(2rem,5vw,2.875rem);
+$h3-font-size:          clamp(1.5rem,3.5vw,2rem);
+$h4-font-size:          clamp(1.25rem,2.5vw,1.625rem);
+$h5-font-size:          clamp(1.15rem, 2.25vw, 1.5rem);
+$h6-font-size:          1rem;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+) !default;
+
+$display-font-sizes: (
+  1: clamp(3rem,5vw,4.375rem),
+  2: clamp(2.85rem,6vw,4rem),
+  3: clamp(2.25rem,6vw,3.25rem),
+) !default;
+
+//Spacing
+$spacer:            1rem;
+$spacer-modifier:   1.250;
+$spacer-half:       $spacer * .5;
+$spacer-1:          $spacer;
+$spacer-2:          $spacer-1 * $spacer-modifier;
+$spacer-3:          $spacer-2 * $spacer-modifier;
+$spacer-4:          $spacer-3 * $spacer-modifier;
+$spacer-5:          $spacer-4 * $spacer-modifier;
+$spacer-6:          $spacer-5 * $spacer-modifier;
+$spacer-7:          $spacer-6 * $spacer-modifier;
+$spacer-8:          $spacer-7 * $spacer-modifier;
+$spacer-9:          $spacer-8 * $spacer-modifier;
+$spacer-10:         $spacer-9 * $spacer-modifier;
+
+$spacers: (
+    0:      0,
+    'half': $spacer-half,
+    1:      $spacer-1,
+    2:      $spacer-2,
+    3:      $spacer-3,
+    4:      $spacer-4,
+    5:      $spacer-5,
+    6:      $spacer-6,
+    7:      $spacer-7,
+    8:      $spacer-8,
+    9:      $spacer-9,
+    10:     $spacer-10,
+) !default;
+
+//Borders
+$section-border-radius: clamp(50px,6vw,120px);
+$section-border-corners: (top-right, top-left, bottom-right, bottom-left) !default;
