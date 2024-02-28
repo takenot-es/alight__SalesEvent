@@ -80,6 +80,8 @@
     z-index: 100000;
     transition: .3s all ease-in-out;
     transform: translateX(-100vw);
+    overflow-y: scroll;
+    padding-bottom: $spacer-2;
 
 
 
@@ -112,6 +114,18 @@
         width: 100%;
         padding: 0.625rem 2rem;
         text-decoration: none;
+    }
+
+    .form-check {
+        width: 100%;
+    }
+
+    input[type="text"], select, textarea {
+        border: 1px solid lighten($black,90%);
+        border-radius: $spacer-half;
+        width: 100%;
+        padding: $spacer-half $spacer-half;
+        min-height: 50px;
     }
 
 }
